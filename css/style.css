@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+:root {
+    --background-color-bottom: hwb(257 9% 61%);
+    --background-color: #222; 
+    --background-inputs: #111;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: system-ui;
+}
+
+input {
+    transition: 0.2s linear;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px 0;
+    height: 30px;
+    color: #fff;
+    background-color: var(--background-inputs);
+    width: 100%;
+}
+
+input:focus {
+    scale: 1.1;
+    background-color: black;
+}
+
+.crud button {
+    background-color: var(--background-color-bottom);
+    color: #fff;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.crud button:hover {
+    background-color: rgb(212, 27, 172);
+    scale: 1.1;
+}
+
+.crud {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.head h2 {
+    text-transform: uppercase;
+}
+
+.head p {
+    text-transform: uppercase;
+}
+
+.inputs .salary input {
+    width: 22%;
+}
+
+.inputs .salary small {
+    margin-left: .5rem;
+    padding: 5px 2px;
+    color: #fff;
+    background-color: #a00d02;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputs .salary small::before {
+    content: "Total: ";
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: var(--background-color-bottom);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1rem;
+    margin: 4px 0;
+    height: 30px;
+}
+
+.inputs .product-info button:hover {
+    background-color: rgb(212, 27, 172);
+    letter-spacing: 1px;
+}
+
+.outputs .search-outputs .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+
